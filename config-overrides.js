@@ -1,5 +1,9 @@
-module.exports= function override(config, evn){
+const {
+    override, useBabelRc
 
-    
-    return config;
-}
+} = require("customize-cra");
+
+
+module.exports = override(
+useBabelRc()
+);
